@@ -15,7 +15,7 @@ Configure the virtualenv:
 
 ``virtualenv salt-ssh-example/env``
 
-.. note::
+.. code-block:: note
     Ensure that you DO NOT commit the env directory to source control
 
 Activate the virtualenv:
