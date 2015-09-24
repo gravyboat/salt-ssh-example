@@ -1,0 +1,8 @@
+#This is an example of what the Saltfile can look like, it is basically default
+#options. You can read more on it here:
+# https://docs.saltstack.com/en/develop/topics/ssh/index.html#define-cli-options-with-saltfile
+
+salt-ssh:
+  config_dir: ./config
+  max_procs: 30
+  wipe_ssh: True

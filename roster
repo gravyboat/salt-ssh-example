@@ -1,0 +1,5 @@
+my-server.domain.com:
+  host: my-ser.domain.com
+  user: my_user
+  sudo: True
+  tty: True
