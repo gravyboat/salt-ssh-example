@@ -15,7 +15,7 @@ Configure the virtualenv:
 
 ``virtualenv salt-ssh-example/env``
 
-.. code-block:: note
+.. note::
     Ensure that you DO NOT commit the env directory to source control
 
 Activate the virtualenv:
@@ -52,12 +52,12 @@ One with python 2.6 or greater:
 
 .. note::
     This command may take some time on minions that do not have salt in
-    the tmp dir already, it is recommended to use `-r` when you simply want to
+    the tmp dir already, it is recommended to use ``-r`` when you simply want to
     user raw ssh commands. Please see the Options section below for more details
-    on both the `-r` command, as well as removing the minion from the server
-    with `-W`.
+    on both the ``-r`` command, as well as removing the minion from the server
+    with ``-W``.
 
-One without using Python (using the `-r` option):
+One without using Python (using the ``-r`` option):
 
 ``salt-ssh 'my-server.domain.com' --priv ../.ssh/my_key --roster-file roster --log-file=./log/salt-ssh -c ./config -r ifconfig``
 
@@ -75,9 +75,9 @@ Querying every system:
 Options
 -------
 
-Use `-W` to ensure that the salt-minion is not left on the system.
+Use ``-W`` to ensure that the salt-minion is not left on the system.
 
-For old boxes (or systems that do not have the minion in /tmp) use `-r` to
+For old boxes (or systems that do not have the minion in /tmp) use ``-r`` to
 send raw ssh where Python is older than 2.6. This is also helpful when you
 need to get things done quickly on new systems and know that the minion
 will not exist in the /tmp dir.
