@@ -35,7 +35,9 @@ file.
 
 .. note::
     The provided roster file has a single example system that does not actually
-    work. You will need to populate this file with your systems.
+    work. You will need to populate this file with your systems. You can read
+    more about roster files here:
+    https://docs.saltstack.com/en/latest/topics/ssh/roster.html
 
 Usage
 -----
